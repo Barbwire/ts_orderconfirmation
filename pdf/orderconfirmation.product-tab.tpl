@@ -26,12 +26,12 @@
 
 	<thead>
 	<tr>
-		<th class="product header small" width="15%">{l s='Reference' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header small" width="45%">{l s='Product' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header small" width="8%">{l s='Tax Rate' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header-right small" width="12%">{l s='Unit Price' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax incl.)' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header small" width="8%">{l s='Qty' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header-right small" width="12%">{l s='Total' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax incl.)' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header small" width="15%">{l s='Reference' mod='ts_orderconfirmation'}</th>
+		<th class="product header small" width="45%">{l s='Product' mod='ts_orderconfirmation'}</th>
+		<th class="product header small" width="8%">{l s='Tax Rate' mod='ts_orderconfirmation'}</th>
+		<th class="product header-right small" width="12%">{l s='Unit Price' mod='ts_orderconfirmation'} <br /> {l s='(Tax incl.)' mod='ts_orderconfirmation'}</th>
+		<th class="product header small" width="8%">{l s='Qty' mod='ts_orderconfirmation'}</th>
+		<th class="product header-right small" width="12%">{l s='Total' mod='ts_orderconfirmation'} <br /> {l s='(Tax incl.)' mod='ts_orderconfirmation'}</th>
 	</tr>
 	</thead>
 
@@ -75,7 +75,7 @@
 		{if $smarty.foreach.cart_rules_loop.first}
 		<tr class="discount">
 			<th class="header" colspan="{$layout._colCount}">
-				{l s='Discounts' d='Shop.Pdf' pdf='true'}
+				{l s='Discounts' mod='ts_orderconfirmation'}
 			</th>
 		</tr>
 		{/if}

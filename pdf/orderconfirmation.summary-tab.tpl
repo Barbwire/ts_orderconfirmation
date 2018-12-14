@@ -24,12 +24,12 @@
  *}
 <table id="summary-tab" width="100%">
 	<tr>
-		<th class="header small" valign="middle">{l s='Order Confirmation Number' d='Shop.Pdf' pdf='true'}</th>
-		<th class="header small" valign="middle">{l s='Order Confirmation Date' d='Shop.Pdf' pdf='true'}</th>
-		<th class="header small" valign="middle">{l s='Order Reference' d='Shop.Pdf' pdf='true'}</th>
-		<th class="header small" valign="middle">{l s='Order date' d='Shop.Pdf' pdf='true'}</th>
+		<th class="header small" valign="middle">{l s='Order Confirmation Number' mod='ts_orderconfirmation'}</th>
+		<th class="header small" valign="middle">{l s='Order Confirmation Date' mod='ts_orderconfirmation'}</th>
+		<th class="header small" valign="middle">{l s='Order Reference' mod='ts_orderconfirmation'}</th>
+		<th class="header small" valign="middle">{l s='Order date' mod='ts_orderconfirmation'}</th>
 		{if $addresses.invoice->vat_number}
-			<th class="header small" valign="middle">{l s='VAT Number' d='Shop.Pdf' pdf='true'}</th>
+			<th class="header small" valign="middle">{l s='VAT Number' mod='ts_orderconfirmation'}</th>
 		{/if}
 	</tr>
 	<tr>

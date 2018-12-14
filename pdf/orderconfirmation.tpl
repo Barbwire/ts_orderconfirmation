@@ -111,9 +111,9 @@
 	</tr>
 	<tr>
 		<td colspan="12" height="10">&nbsp;
-			{l s='We thank you for your order and kindly ask you to transfer the amount of' d='Shop.Pdf' pdf='true'}
+			{l s='We thank you for your order and kindly ask you to transfer the amount of' mod='ts_orderconfirmation'}
 			<b>{displayPrice currency=$order->id_currency price=$order->total_paid_tax_incl}</b>
-			{l s='to the bank account stated below, with indication of order reference ' d='Shop.Pdf' pdf='true'}
+			{l s='to the bank account stated below, with indication of order reference ' mod='ts_orderconfirmation'}
 			<b>AB{$order->getUniqReference()}</b>.
 		</td>
 	</tr>

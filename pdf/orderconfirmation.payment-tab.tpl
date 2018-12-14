@@ -24,7 +24,7 @@
  *}
 <table id="payment-tab" width="100%">
 	<tr>
-		<td class="payment center small grey bold" width="44%">{l s='Payment Method' d='Shop.Pdf' pdf='true'}</td>
+		<td class="payment center small grey bold" width="44%">{l s='Payment Method' mod='ts_orderconfirmation'}</td>
 		<td class="payment left white" width="56%">
 			<table width="100%" border="0">
 				{foreach from=$order_payment item=payment}

@@ -26,7 +26,7 @@
 <!--  TAX DETAILS -->
 {if $tax_exempt}
 
-	{l s='Exempt of VAT according to section 259B of the General Tax Code.' d='Shop.Pdf' pdf='true'}
+	{l s='Exempt of VAT according to section 259B of the General Tax Code.' mod='ts_orderconfirmation'}
 
 
 {/if}

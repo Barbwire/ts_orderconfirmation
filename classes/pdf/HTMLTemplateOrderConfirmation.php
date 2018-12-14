@@ -65,7 +65,7 @@ class HTMLTemplateOrderConfirmation extends HTMLTemplate
     public function getHeader()
     {
         $this->assignCommonHeaderData();
-        $this->smarty->assign(array('header' => Context::getContext()->getTranslator()->trans('Order Confirmation', array(), 'Shop.Pdf')));
+        $this->smarty->assign(array('header' => $this->l('Order Confirmation')));
         return $this->smarty->fetch($this->getTemplate('header'));
     }
 
