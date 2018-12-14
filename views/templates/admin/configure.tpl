@@ -26,23 +26,20 @@
 <div class="panel">
 	<h3><i class="icon icon-credit-card"></i> {l s='TS Order Confirmation' mod='ts_orderconfirmation'}</h3>
 	<p>
-		<strong>{l s='Here is my new generic module!' mod='ts_orderconfirmation'}</strong><br />
-		{l s='Thanks to PrestaShop, now I have a great module.' mod='ts_orderconfirmation'}<br />
-		{l s='I can configure it using the following configuration form.' mod='ts_orderconfirmation'}
+		<strong>{l s='Developed by TecServe.eu' mod='ts_orderconfirmation'}</strong><br />
+		{l s='We developed this module for our own store.' mod='ts_orderconfirmation'}<br />
+		{l s='You can configure it here.' mod='ts_orderconfirmation'}
 	</p>
-	<br />
 	<p>
-		{l s='This module will boost your sales!' mod='ts_orderconfirmation'}
+		{l s='This module will speed up your work!' mod='ts_orderconfirmation'}
 	</p>
 </div>
 
 <div class="panel">
 	<h3><i class="icon icon-tags"></i> {l s='Documentation' mod='ts_orderconfirmation'}</h3>
-	<p>
-		&raquo; {l s='You can get a PDF documentation to configure this module' mod='ts_orderconfirmation'} :
-		<ul>
-			<li><a href="#" target="_blank">{l s='English' mod='ts_orderconfirmation'}</a></li>
-			<li><a href="#" target="_blank">{l s='French' mod='ts_orderconfirmation'}</a></li>
-		</ul>
+	<p>{l s='Find the README file here' mod='ts_orderconfirmation'}:
+	<ul>
+		<li><a href="https://github.com/Barbwire/ts_orderconfirmation/blob/master/README.md" target="_blank">{l s='README on GitHub' mod='ts_orderconfirmation'}</a></li>
+	</ul>
 	</p>
 </div>

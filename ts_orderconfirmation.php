@@ -39,7 +39,7 @@ class Ts_orderconfirmation extends Module
         $this->name = 'ts_orderconfirmation';
         $this->tab = 'administration';
         $this->version = '1.0.0';
-        $this->author = 'Barbwire';
+        $this->author = 'TecServe';
         $this->need_instance = 0;
 
         /**
@@ -55,11 +55,9 @@ class Ts_orderconfirmation extends Module
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
     }
 
-    /**
-     * Don't forget to create update methods if needed:
-     */
     public function install()
     {
+        Configuration::updateValue('TS_ORDERCONFIRMATION_PREFIX', 'OC');
         return parent::install() &&
             $this->registerHook('backOfficeHeader') &&
             $this->registerHook('displayBackOfficeOrderActions');
@@ -67,6 +65,7 @@ class Ts_orderconfirmation extends Module
 
     public function uninstall()
     {
+        Configuration::deleteByName('TS_ORDERCONFIRMATION_PREFIX');
         return parent::uninstall();
     }
 
@@ -150,7 +149,7 @@ class Ts_orderconfirmation extends Module
     protected function getConfigFormValues()
     {
         return array(
-            'TS_ORDERCONFIRMATION_PREFIX' => Configuration::get('TS_ORDERCONFIRMATION_PREFIX', 'AB2018000'),
+            'TS_ORDERCONFIRMATION_PREFIX' => Configuration::get('TS_ORDERCONFIRMATION_PREFIX'),
         );
     }
 

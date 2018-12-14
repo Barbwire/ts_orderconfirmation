@@ -32,7 +32,7 @@ class HTMLTemplateOrderConfirmation extends HTMLTemplate
     public $order;
     public $shop_address;
     public $available_in_your_account = false;
-    private $prefix = 'AB201800';
+    private $prefix;
 
     /**
      * @param Order $order
@@ -53,6 +53,8 @@ class HTMLTemplateOrderConfirmation extends HTMLTemplate
         $this->title = $this->prefix.$this->order->reference;
 
         $this->shop = new Shop((int)$this->order->id_shop);
+
+        $this->prefix = Configuration::get('TS_ORDERCONFIRMATION_PREFIX');
     }
 
     /**
@@ -63,7 +65,7 @@ class HTMLTemplateOrderConfirmation extends HTMLTemplate
     public function getHeader()
     {
         $this->assignCommonHeaderData();
-        $this->smarty->assign(array('header' => 'Auftragsbestätigung'));
+        $this->smarty->assign(array('header' => Context::getContext()->getTranslator()->trans('Order Confirmation', array(), 'Shop.Pdf')));
         return $this->smarty->fetch($this->getTemplate('header'));
     }
 
